@@ -1,0 +1,121 @@
+* {
+	margin: 0; border: 0; padding: 0;
+}
+/* CSS Reset above this line... ... ... */
+body {
+	background: #363636;
+	font-family: 'Space Mono', monospace;
+}
+/* All tag selectors above this line ... ... ... */
+.main-container {
+	margin: 0 auto;
+	background-color:#d7d7d9;
+	color: #0008ff;
+	text-align: center;
+	position: relative;
+}
+	#fccPomodoro {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	#controls, #pomodoroClock {
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+
+	#controls {
+		width: 22px;
+		height: 60px;
+		position: absolute;
+		top: 100px;
+		right: 450px;
+	}
+		#start, #pause, #reset {
+			margin: 15px;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			box-shadow: 0 0 10px 2px #FFFFFF;
+			cursor: pointer;
+		}
+		#start {
+			background-color: green;
+		}
+		#pause {
+			background-color: yellow;
+		}
+		#reset {
+			background-color: red;
+		}
+
+	#pomodoroClock {
+		position: absolute;
+		top: 150px;
+		left: 320px;
+	}
+		#work {
+			background-color: green;
+			color: #ffdbdb;
+			width: 390px;
+			height: 390px;
+			border: 1.5px;
+			font-size: 2.5em;
+			border-radius: 50%;
+			box-shadow: 0 0 140px 4px tomato;
+			position: absolute;
+			top: 20px;
+			left: -30px;
+		}
+			#workTimer {
+				font-size: 1.5em;
+				position: absolute;
+				top: 100px;
+				left: 110px;
+			}
+			#workTuner {
+				position: absolute;
+				top: -25px;
+				left: -100px;
+			}
+			#letsWork {
+				position: absolute;
+				top: 240px;
+				left: 40px;
+			}
+
+		#break {
+			background-color: #fc8383;
+			color: #e9f4e3;
+			width: 200px;
+			height: 200px;
+			border: 1.5px;
+			font-size: 1.7em;
+			border-radius: 50%;
+			box-shadow: 0 0 140px 4px #f593ee;
+			position: absolute;
+			top: 218px;
+			left: 510px;
+		}
+			#breakTimer {
+				position: absolute;
+				top: 50px;
+				left: 65px;
+			}
+			#breakTuner {
+				position: absolute;
+				top: -30px;
+				left: -60px;
+			}
+			#letsBreak {
+				font-size: 0.65em;
+				position: absolute;
+				top: 125px;
+				left: 20px;
+			}
+
+				#workTimer, #workTunerMinus, #workTunerPlus, #breakTimer, #breakTunerMinus, #breakTunerPlus {
+					cursor: pointer;
+				}

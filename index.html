@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC Pomodoro Clock</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<!-- google fonts below -->
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+</head>
+<style>
+.th {
+  position: absolute;
+transition: transform .2s; 
+  top: 150px;
+font-family:Segoe Print;
+  right: 40px;
+
+ color:black;
+ -ms-transform: rotate(278deg); /* IE 9 */
+  transform: rotate(342deg);
+  text-shadow: 1px 3px #8CF7F2;
+  font-size: 25px;
+   -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+.th:hover{
+
+transform: scale(1.1);
+ -ms-transform: rotate(278deg); /* IE 9 */
+  transform: rotate(350deg);
+font-size: 40px
+}
+
+.blink {
+      animation: blinker 0.6s linear infinite;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      font-family:cursive;
+      }
+      @keyframes blinker {  
+      50% { opacity: 0; }
+      }
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #F4F967, 0 0 20px #F4F967 , 0 0 30px #F4F967, 0 0 40px #F4F967, 0 0 50px red, 0 0 60px white, 0 0 70px 0C0A0A;
+  }
+  
+  to {
+    text-shadow: 0 0 20px red, 0 0 30px #ff4da6, 0 0 40px #EEE972, 0 0 50px red, 0 0 60px #EEE972, 0 0 70px red, 0 0 80px #F4F967;
+  }}
+</style>
+<body>
+	<div class="main-container">
+		<div id="fccPomodoro">
+			Pomodoro Clock <br> by HEMANTH N
+		</div>
+
+		<div id="controls">
+			<div id="start" title="start"></div>
+			<div id="pause" title="pause"></div>
+			<div id="reset" title="reset"></div>
+		</div>
+
+		<div id="pomodoroClock">
+			<div id="work">
+				<div id="workTimer"><span id="minsWorkTimer">25</span>:<span id="secsWorkTimer">00</span></div>
+				<div id="workTuner"><span id="workTunerMinus">-</span> <span id="workTunerCount">25</span> <span id="workTunerPlus">+</span></div>
+				<div id="letsWork">Start Work !</div>
+			</div>
+			<div id="break">
+				<div id="breakTimer"><span id="minsBreakTimer">5</span>:<span id="secsBreakTimer">00</span></div>
+				<div id="breakTuner"><span id="breakTunerMinus">-</span> <span id="breakTunerCount">5</span> <span id="breakTunerPlus">+</span></div>
+				<div id="letsBreak">Take a break !!!</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="main.js"></script>
+
+
+
+<b>
+
+<div class="th">
+<p class="blink">Developed by <br> HEMANTH N</p>
+</div>
+</b>
+</body>
+</html>
